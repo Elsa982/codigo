@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FDR</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Contenedor de la galería */
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        /* Estilo base de cada video */
+        .galeria video {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, opacity 0.5s ease, border 0.5s ease;
+            border: 4px solid transparent;
+        }
+
+        /* Efectos al pasar el ratón */
+        .zoom:hover {
+            transform: scale(1.1);
+        }
+        .borde-animado:hover {
+            border-color: #ff6f61;
+            transform: scale(1.05);
+        }
+        .opacidad:hover {
+            opacity: 0.8;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FRANKLIN DELANO ROOSEVELT</h1>
+
+    <div class="galeria">
+        <!-- Video con efecto de zoom -->
+        <video src="video1.mp4" class="zoom" controls></video>
+        
+        <!-- Video con borde animado -->
+        <video src="video2.mp4" class="borde-animado" controls></video>
+        
+        <!-- Video con efecto de opacidad -->
+        <video src="video3.mp4" class="opacidad" controls></video>
+        
+        <!-- Otro video con efecto de zoom -->
+        <video src="video4.mp4" class="zoom" controls></video>
+        
+        <!-- Otro video con borde animado -->
+        <video src="video5.mp4" class="borde-animado" controls></video>
+        
+        <!-- Otro video con efecto de opacidad -->
+        <video src="video6.mp4" class="opacidad" controls></video>
+    </div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Cambiante de Color</title>
+    <link rel="stylesheet" href="pagina5.css"> <!-- Enlace al archivo CSS -->
+    <script>
+        function cambiarColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Página para Cambiar el Color de Fondo</h1>
+        <p>2024</p>
+    </header>
+    <div class="botones">
+        <button onclick="cambiarColor('#f5a623')">Naranja</button>
+        <button onclick="cambiarColor('#4a90e2')">Azul</button>
+        <button onclick="cambiarColor('#50e3c2')">Verde Claro</button>
+        <button onclick="cambiarColor('#9b59b6')">Morado</button>
+        <button onclick="cambiarColor('#ffffff')">Blanco</button>
+    </div>
+</body>
+</html>

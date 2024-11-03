@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
+  <title>Página de Inicio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      max-width: 400px;
+      width: 100%;
+    }
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-group input:focus {
+      border-color: #4CAF50;
+      outline: none;
+    }
+    .btn-submit {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn-submit:hover {
+      background-color: #45a049;
+    }
+    .form-footer {
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Registro de Usuario</h2>
+  <form id="formRegistro">
+    <div class="form-group">
+      <label for="nombre">Nombre completo</label>
+      <input type="text" id="elsa" name="elsa" required>
+    </div>
+    <div class="form-group">
+      <label for="correo">Correo Electrónico</label>
+      <input type="email" id="@elsafabelygallardocastillo.com" name="correo" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Contraseña</label>
+      <input type="password" id="1234" name="1234" minlength="6" required>
+    </div>
+    <div class="form-group">
+      <label for="confirm_password">Confirmar Contraseña</label>
+      <input type="password" id="1234" name="1234" minlength="6" required>
+    </div>
+    <button type="button" class="btn-submit" onclick="validarFormulario()">Registrarse</button>
+  </form>
+  <div class="form-footer">
+    <p>¿Ya tienes una cuenta? <a href="#">Inicia sesión</a></p>
+  </div>
+</div>
+
+<script>
+  function validarFormulario() {
+    // Obtiene los valores de los campos del formulario
+    const nombre = document.getElementById("nombre").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirm_password").value;
+
+    // Verifica si todos los campos están completos
+    if (!nombre || !correo || !password || !confirmPassword) {
+      alert("Por favor, complete todos los campos.");
+      return;
+    }
+
+    // Verifica si la contraseña y la confirmación coinciden
+    if (password !== confirmPassword) {
+      alert("Las contraseñas no coinciden.");
+      return;
+    }
+
+    // Si todo está correcto, se envía el formulario o se redirige a otra página
+    alert("Registro exitoso. Redirigiendo a la página de inicio...");
+    window.location.href = "/pagina-de-inicio";
+  }
+</script>
+
+</body>
+</html>
+<div class="container">
+    <h2>Registro de Usuario</h2>
+    <form action="" method="POST">
+      <div class="form-group">

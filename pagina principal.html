@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagina principal</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Estilos de los botones */
+        .boton {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #ff6f61;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .boton:hover {
+            background-color: #ff9671; /* Color al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>FRANKLIN DELANO ROOSEVELT</h1>
+
+    <button class="boton" onclick="window.location.href='pagina1.html'">PROMOCIÓN 2024</button>
+    <button class="boton" onclick="window.location.href='pagina2.html'">GRADOS</button>
+    <button class="boton" onclick="window.location.href='pagina3.html'">INSTITUCION</button>
+    <button class="boton" onclick="window.location.href='pagina4.html'">LABORATORIO</button>
+    <button class="boton" onclick="window.location.href='pagina5.html'">VIDEOS DE LA INSTITUCION</button>
+    <button class="boton" onclick="window.location.href='pagina6.html'">PROMOCION 2024</button>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserción de Imagen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+        img {
+            max-width: 100%; /* Asegura que la imagen no exceda el ancho de la pantalla */
+            height: auto; /* Mantiene la proporción de la imagen */
+            border-radius: 10px; /* Bordes redondeados para la imagen */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <img src="franklin.jpg" alt="institucion">
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTITUTO GUBERNAMENTAL FRANKLIN DELANO ROOSEVELT</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s; /* Transición suave al cambiar el color */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .boton {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 1.2em;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .boton:hover {
+            transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Cambiar Color de Fondo</h1>
+    <button class="boton" style="background-color: #ff6f61;" onclick="cambiarColor('#ff6f61')">Rojo</button>
+    <button class="boton" style="background-color: #6fbf6f;" onclick="cambiarColor('#6fbf6f')">Verde</button>
+    <button class="boton" style="background-color: #61a1ff;" onclick="cambiarColor('#61a1ff')">Azul</button>
+    <button class="boton" style="background-color: #ffcc61;" onclick="cambiarColor('#ffcc61')">Amarillo</button>
+
+    <script>
+        function cambiarColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
+
+
+

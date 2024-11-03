@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Fondo claro */
+}
+
+header {
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en filas */
+    justify-content: center; /* Centra las imágenes en la página */
+    margin: 20px; /* Margen alrededor de la galería */
+}
+
+.galeria img {
+    margin: 10px; /* Espacio entre las imágenes */
+    border-radius: 15px; /* Bordes redondeados */
+    border: 3px solid #4CAF50; /* Bordes de color verde */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra suave para las imágenes */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efectos de transición */
+    width: 300px; /* Ancho fijo de las imágenes */
+    height: auto; /* Mantiene la relación de aspecto */
+}
+
